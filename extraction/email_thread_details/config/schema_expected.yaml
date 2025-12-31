@@ -1,0 +1,62 @@
+table: public.email_thread_details
+
+primary_key:
+  - thread_id
+
+columns:
+  - name: thread_id
+    type: integer
+    nullable: false
+
+  - name: subject
+    type: text
+    nullable: true
+
+  - name: sender
+    type: text
+    nullable: false
+
+  - name: recipients
+    type: text
+    nullable: true
+
+  - name: message_count
+    type: integer
+    nullable: true
+
+  - name: created_at
+    type: timestamp
+    nullable: true
+
+  - name: updated_at
+    type: timestamp
+    nullable: true
+table: public.email_thread_details
+
+primary_key:
+  - thread_id
+
+columns:
+  - name: thread_id
+    type: integer
+    nullable: false
+
+  - name: subject
+    type: text
+    nullable: true
+
+  - name: from
+    type: text
+    nullable: false
+
+  - name: to
+    type: text
+    nullable: true
+
+  - name: body
+    type: text
+    nullable: true
+
+  - name: timestamp
+    type: timestamp
+    nullable: true
